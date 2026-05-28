@@ -113,35 +113,44 @@ export function Projects({ onSelectProject }: ProjectsProps) {
           <div><p className="eyebrow mono-label text-white/50 mb-6">Selected work</p><h2 className="display text-5xl md:text-7xl lg:text-8xl text-white">Projects</h2></div>
           <span className="mono-label text-white/40 hidden md:block">{String(projects.length).padStart(2, '0')} Case Studies</span>
         </motion.div>
-        <div className="border-t border-[var(--hairline)]">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <motion.article
               key={project.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-80px' }}
-              transition={{ duration: 0.5, delay: (index % 2) * 0.05 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.6, delay: (index % 2) * 0.08, ease: [0.16, 1, 0.3, 1] }}
               onClick={() => onSelectProject(project.id)}
-              className="group relative grid grid-cols-12 items-center gap-4 md:gap-6 py-6 md:py-7 border-b border-[var(--hairline)] cursor-pointer transition-colors hover:bg-[var(--surface-1)]"
+              className="group cursor-pointer"
             >
-              <div className="absolute left-0 top-0 bottom-0 w-px scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500" style={{ background: 'var(--accent-brand)' }} />
-              <div className="col-span-2 md:col-span-1 pl-4"><span className="mono-label text-white/30 group-hover:text-accent transition-colors">{String(index + 1).padStart(2, '0')}</span></div>
-              <div className="col-span-10 md:col-span-5">
-                <h3 className="display text-2xl md:text-4xl text-white group-hover:translate-x-3 transition-transform duration-500">{project.title}</h3>
-                <p className="text-white/45 mt-2 tracking-tight group-hover:translate-x-3 transition-transform duration-500 delay-[40ms]">{project.subtitle}</p>
-                <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 md:hidden">{project.tags.map((tag) => (<span key={tag} className="mono-label text-white/40">{tag}</span>))}</div>
+              <div className="relative overflow-hidden rounded-2xl border border-[var(--hairline)] bg-[var(--surface-1)] aspect-[4/3] transition-colors duration-500 group-hover:border-[var(--accent-brand)]">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+                <span className="absolute top-5 left-5 mono-label text-white/70">{String(index + 1).padStart(2, '0')}</span>
+                <span className="absolute top-5 right-5 mono-label text-white/60">{project.year}</span>
+                <span className="absolute bottom-5 right-5 flex items-center justify-center w-11 h-11 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white transition-all duration-500 group-hover:bg-[var(--accent-brand)] group-hover:border-transparent group-hover:text-[var(--accent-ink)] group-hover:rotate-45">
+                  <ArrowUpRight className="w-5 h-5" />
+                </span>
               </div>
-              <div className="hidden md:block col-span-4 overflow-hidden rounded-xl aspect-[16/10]">
-                <img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]" />
+              <div className="flex items-start justify-between gap-4 mt-5">
+                <div>
+                  <h3 className="display text-2xl md:text-3xl text-white transition-colors duration-300 group-hover:text-accent">{project.title}</h3>
+                  <p className="text-white/45 mt-1.5 tracking-tight">{project.subtitle}</p>
+                </div>
               </div>
-              <div className="col-span-12 md:col-span-2 flex md:justify-end items-center gap-4 pl-4 md:pl-0">
-                <span className="mono-label text-white/40">{project.year}</span>
-                <span className="flex items-center justify-center w-10 h-10 rounded-full border border-[var(--hairline)] text-white transition-all group-hover:border-transparent group-hover:bg-[var(--accent-brand)] group-hover:text-[var(--accent-ink)] group-hover:rotate-45"><ArrowUpRight className="w-5 h-5" /></span>
-              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3">{project.tags.map((tag) => (<span key={tag} className="mono-label text-white/35">{tag}</span>))}</div>
             </motion.article>
           ))}
         </div>
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center py-16">
+
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center py-20">
           <a href="https://www.behance.net/ayoub-benhamouche" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-5 border border-[var(--hairline)] hover:border-[var(--accent-brand)] text-white rounded-full transition-all group"><span className="text-lg tracking-wide">View More Work on Behance</span><ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></a>
         </motion.div>
       </div>
