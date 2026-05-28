@@ -107,127 +107,34 @@ const projects = [
 
 export function Projects({ onSelectProject }: ProjectsProps) {
   return (
-    <section id="work" className="min-h-screen px-8 py-32">
+    <section id="work" className="px-8 py-32">
       <div className="max-w-[1400px] mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <h2 className="text-6xl md:text-7xl lg:text-8xl text-white tracking-tight">
-            Selected Work
-          </h2>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.8 }} className="mb-16 flex items-end justify-between gap-8">
+          <div><p className="eyebrow mono-label text-white/50 mb-6">Selected work</p><h2 className="text-5xl md:text-7xl lg:text-8xl text-white tracking-tight">Projects</h2></div>
+          <span className="mono-label text-white/40 hidden md:block">{String(projects.length).padStart(2, '0')} Case Studies</span>
         </motion.div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-24">
+        <div className="border-t border-[var(--hairline)]">
           {projects.map((project, index) => (
-            <motion.article
-              key={project.id}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group"
-            >
-              <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-500">
-                {/* Project Image */}
-                <div 
-                  className="relative overflow-hidden aspect-[16/10] cursor-pointer"
-                  onClick={() => onSelectProject(project.id)}
-                >
-                  <motion.img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-8">
-                    <motion.div
-                      className="text-white tracking-wider flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full"
-                      initial={{ y: 20, opacity: 0 }}
-                      whileHover={{ y: 0, opacity: 1 }}
-                    >
-                      <span>View Case Study</span>
-                      <ArrowUpRight className="w-5 h-5" />
-                    </motion.div>
-                  </div>
-                </div>
-                
-                {/* Project Info */}
-                <div className="p-8">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 
-                      className="text-3xl text-white tracking-tight cursor-pointer hover:text-white/80 transition-colors"
-                      onClick={() => onSelectProject(project.id)}
-                    >
-                      {project.title}
-                    </h3>
-                    <span className="text-white/30 tracking-wide">{project.year}</span>
-                  </div>
-                  
-                  <p className="text-lg text-white/50 mb-4 tracking-tight">
-                    {project.subtitle}
-                  </p>
-                  
-                  <p className="text-white/40 leading-relaxed mb-6">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-sm text-white/60 tracking-wide"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="flex items-center gap-4 pt-6 border-t border-white/10">
-                    <button
-                      onClick={() => onSelectProject(project.id)}
-                      className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-white text-black hover:bg-white/90 rounded-lg transition-colors group"
-                    >
-                      <span className="tracking-wide">View Case Study</span>
-                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                    </button>
-                    
-                    <a
-                      href={project.behance}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-white transition-colors"
-                    >
-                      <ArrowUpRight className="w-5 h-5" />
-                    </a>
-                  </div>
-                </div>
+            <motion.article key={project.id} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-80px' }} transition={{ duration: 0.5, delay: (index % 2) * 0.05 }} onClick={() => onSelectProject(project.id)} className="group relative grid grid-cols-12 items-center gap-6 py-8 border-b border-[var(--hairline)] cursor-pointer">
+              <div className="absolute left-0 top-0 bottom-0 w-px scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500" style={{ background: 'var(--accent-brand)' }} />
+              <div className="col-span-2 md:col-span-1 pl-4"><span className="mono-label text-white/30 group-hover:text-accent transition-colors">{String(index + 1).padStart(2, '0')}</span></div>
+              <div className="col-span-10 md:col-span-5">
+                <h3 className="text-2xl md:text-4xl text-white tracking-tight group-hover:translate-x-2 transition-transform duration-500">{project.title}</h3>
+                <p className="text-white/45 mt-2 tracking-tight">{project.subtitle}</p>
+                <div className="flex flex-wrap gap-x-5 gap-y-1 mt-4">{project.tags.map((tag) => (<span key={tag} className="mono-label text-white/40">{tag}</span>))}</div>
+              </div>
+              <div className="hidden md:block col-span-4 overflow-hidden rounded-xl aspect-[16/10]">
+                <motion.img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover opacity-70 group-hover:opacity-100" whileHover={{ scale: 1.05 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} />
+              </div>
+              <div className="col-span-12 md:col-span-2 flex md:justify-end items-center gap-4 pl-4 md:pl-0">
+                <span className="mono-label text-white/40">{project.year}</span>
+                <span className="flex items-center justify-center w-10 h-10 rounded-full border border-[var(--hairline)] text-white transition-colors group-hover:border-transparent group-hover:bg-[var(--accent-brand)] group-hover:text-[var(--accent-ink)]"><ArrowUpRight className="w-5 h-5" /></span>
               </div>
             </motion.article>
           ))}
         </div>
-        
-        {/* View More on Behance */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center py-16"
-        >
-          <a
-            href="https://www.behance.net/ayoub-benhamouche"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-full transition-all group"
-          >
-            <span className="text-lg tracking-wide">View More Work on Behance</span>
-            <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </a>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center py-16">
+          <a href="https://www.behance.net/ayoub-benhamouche" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-5 border border-[var(--hairline)] hover:border-[var(--accent-brand)] text-white rounded-full transition-all group"><span className="text-lg tracking-wide">View More Work on Behance</span><ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></a>
         </motion.div>
       </div>
     </section>

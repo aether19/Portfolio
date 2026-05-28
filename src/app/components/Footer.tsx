@@ -30,12 +30,12 @@ export function Footer() {
         >
           <a
             href="mailto:benhamouche.ayoub11@gmail.com"
-            className="group flex items-center justify-between px-8 py-6 bg-white text-black hover:bg-white/90 rounded-2xl transition-all"
+            className="group flex items-center justify-between px-8 py-6 rounded-2xl transition-transform hover:scale-[1.01]" style={{ backgroundColor: 'var(--accent-brand)', color: 'var(--accent-ink)' }}
           >
             <div className="flex items-center gap-4">
               <Mail className="w-6 h-6" />
               <div>
-                <div className="text-sm text-black/60 mb-1">Email</div>
+                <div className="text-sm text-white/70 mb-1">Email</div>
                 <div className="tracking-wide">benhamouche.ayoub11@gmail.com</div>
               </div>
             </div>
@@ -67,7 +67,7 @@ export function Footer() {
           className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pt-12 border-t border-white/10"
         >
           <div className="text-white/30 tracking-wide">
-            © 2025 Ayoub Benhamouche
+            © 2026 Ayoub Benhamouche
           </div>
           
           <div className="flex gap-8 text-white/30">

@@ -41,7 +41,7 @@ const caseStudies = {
     challenge: {
       title: "The Challenge",
       content:
-        "Wondercat AI had a powerful product—AI that genuinely understands brand voice and creates quality content—but their landing page wasn't communicating this effectively. The original page suffered from unclear messaging, weak visual hierarchy, generic stock imagery, and a confusing user journey. Despite having strong word-of-mouth growth, the landing page conversion rate was only 2.3%, significantly below the SaaS industry average of 4-5%. Visitors didn't understand what made Wondercat different from dozens of other AI content tools flooding the market.",
+        "Wondercat AI had a powerful product, AI that genuinely understands brand voice and creates quality content, but their landing page wasn't communicating this effectively. The original page suffered from unclear messaging, weak visual hierarchy, generic stock imagery, and a confusing user journey. Despite having strong word-of-mouth growth, the landing page conversion rate was only 2.3%, significantly below the SaaS industry average of 4-5%. Visitors didn't understand what made Wondercat different from dozens of other AI content tools flooding the market.",
       pain_points: [
         "Conversion rate of only 2.3% (below industry average)",
         "Value proposition unclear and buried in copy",
@@ -54,17 +54,17 @@ const caseStudies = {
     solution: {
       title: "The Solution",
       content:
-        "I redesigned the landing page around a crystal-clear value proposition: \"Post 10x more content in your brand voice.\" Every element was strategically designed to communicate Wondercat's unique differentiator—quality content at agency-level standards for Netflix subscription pricing. The new design uses bold typography, vibrant purple gradients reflecting the brand's creative energy, authentic product screenshots replacing generic stock photos, and a streamlined conversion funnel with clear CTAs at every stage.",
+        "I redesigned the landing page around a crystal-clear value proposition: \"Post 10x more content in your brand voice.\" Every element was strategically designed to communicate Wondercat's unique differentiator, quality content at agency-level standards for Netflix subscription pricing. The new design uses bold typography, vibrant purple gradients reflecting the brand's creative energy, authentic product screenshots replacing generic stock photos, and a streamlined conversion funnel with clear CTAs at every stage.",
       keyDecisions: [
         {
           title: "Value Proposition Clarity",
           description:
-            'Redesigned the hero section with an unmistakably clear headline: "Post 10x more content in your brand voice." The supporting copy immediately addresses the core pain point—creating quality content consistently—while highlighting Wondercat\'s unique approach. Added a distinctive badge "AI that understands your vibe" that humanizes the technology and differentiates from competitors\' generic "AI writing assistant" positioning.',
+            'Redesigned the hero section with an unmistakably clear headline: "Post 10x more content in your brand voice." The supporting copy immediately addresses the core pain point, creating quality content consistently, while highlighting Wondercat\'s unique approach. Added a distinctive badge "AI that understands your vibe" that humanizes the technology and differentiates from competitors\' generic "AI writing assistant" positioning.',
         },
         {
           title: "Trust-Building Social Proof",
           description:
-            'Integrated real product screenshots showing Wondercat in action rather than generic illustrations. Added authentic brand logos, user-generated content examples, and a "Fully Edited" vs "On-Brand" comparison demonstrating the quality difference. This tangible proof addresses skepticism around AI content quality—the primary barrier to adoption.',
+            'Integrated real product screenshots showing Wondercat in action rather than generic illustrations. Added authentic brand logos, user-generated content examples, and a "Fully Edited" vs "On-Brand" comparison demonstrating the quality difference. This tangible proof addresses skepticism around AI content quality, the primary barrier to adoption.',
         },
         {
           title: "Strategic CTA Architecture",
@@ -90,7 +90,7 @@ const caseStudies = {
         icon: Target,
         title: "Strategy & Architecture",
         description:
-          "Developed clear messaging hierarchy focusing on outcomes rather than features. Created wireframes testing different value proposition frameworks and conversion funnel structures. Designed information architecture that progressively builds confidence—from problem identification through solution presentation to social proof and final conversion.",
+          "Developed clear messaging hierarchy focusing on outcomes rather than features. Created wireframes testing different value proposition frameworks and conversion funnel structures. Designed information architecture that progressively builds confidence, from problem identification through solution presentation to social proof and final conversion.",
       },
       {
         icon: Lightbulb,
@@ -109,7 +109,7 @@ const caseStudies = {
     impact: {
       title: "Impact & Results",
       description:
-        "The redesigned landing page transformed Wondercat's conversion performance, exceeding all projected goals. The new design not only increased conversions but also improved user quality—trial users from the new page showed 34% higher activation rates, indicating better product-market fit understanding. The page now serves as a powerful acquisition channel rather than a conversion bottleneck.",
+        "The redesigned landing page transformed Wondercat's conversion performance, exceeding all projected goals. The new design not only increased conversions but also improved user quality, trial users from the new page showed 34% higher activation rates, indicating better product-market fit understanding. The page now serves as a powerful acquisition channel rather than a conversion bottleneck.",
       metrics: [
         {
           label: "Conversion Rate",
@@ -138,7 +138,7 @@ const caseStudies = {
       ],
       testimonial: {
         quote:
-          "Ayoub's redesign was transformative. He didn't just make the page prettier—he fundamentally rethought our messaging and user journey. The 127% conversion increase speaks for itself, but even more impressive is how much better users now understand our product before signing up.",
+          "Ayoub's redesign was transformative. He didn't just make the page prettier, he fundamentally rethought our messaging and user journey. The 127% conversion increase speaks for itself, but even more impressive is how much better users now understand our product before signing up.",
         author: "Michael P.",
         role: "CEO & Founder",
         company: "Wondercat AI",
@@ -183,7 +183,7 @@ const caseStudies = {
     solution: {
       title: "The Solution",
       content:
-        "I designed a streamlined, three-step interface that guides users from product upload to finished video in under 5 minutes. The design philosophy centered on progressive disclosure—keeping the initial experience dead simple while making advanced features discoverable for power users. Every interaction was carefully crafted to build user confidence through immediate visual feedback, clear next steps, and intelligent AI assistance.",
+        "I designed a streamlined, three-step interface that guides users from product upload to finished video in under 5 minutes. The design philosophy centered on progressive disclosure, keeping the initial experience dead simple while making advanced features discoverable for power users. Every interaction was carefully crafted to build user confidence through immediate visual feedback, clear next steps, and intelligent AI assistance.",
       keyDecisions: [
         {
           title: "Progressive Disclosure Architecture",
@@ -295,7 +295,7 @@ const caseStudies = {
     color: "#0EA5E9",
 
     intro:
-      "I led the complete design of NordWave Invest, a FinTech platform democratizing access to Nordic maritime investments. This project required carefully balancing regulatory compliance, financial complexity, and accessibility—creating an interface that makes sophisticated investing approachable for everyday users while maintaining professional credibility. I designed the entire user journey from discovery through onboarding, investing, and portfolio management.",
+      "I led the complete design of NordWave Invest, a FinTech platform democratizing access to Nordic maritime investments. This project required carefully balancing regulatory compliance, financial complexity, and accessibility, creating an interface that makes sophisticated investing approachable for everyday users while maintaining professional credibility. I designed the entire user journey from discovery through onboarding, investing, and portfolio management.",
 
     challenge: {
       title: "The Challenge",
@@ -406,8 +406,8 @@ const caseStudies = {
 
     learnings: [
       "Education reduces anxiety and drives action. When users understand what they're doing and why, they make confident decisions and become long-term customers.",
-      "Trust must be designed intentionally. Every element—from colors to typography to copy to security indicators—contributes to perceived credibility and safety.",
-      "Accessibility isn't just about low minimums. The entire experience—language, visuals, interactions—must feel genuinely welcoming to truly democratize access.",
+      "Trust must be designed intentionally. Every element, from colors to typography to copy to security indicators, contributes to perceived credibility and safety.",
+      "Accessibility isn't just about low minimums. The entire experience, language, visuals, interactions, must feel genuinely welcoming to truly democratize access.",
       "Financial products need extra attention to clarity. What seems obvious to experts is often opaque to beginners. Testing with diverse audiences is essential.",
     ],
   },
@@ -443,7 +443,7 @@ const caseStudies = {
     solution: {
       title: "The Solution",
       content:
-        'I designed a "one-click" interface that hides enormous AI complexity behind radical simplicity. The design philosophy was to automate everything that can be automated—trend analysis, video generation, CGI integration, audience targeting—while giving users control over brand essentials. The interface reflects TikTok\'s energetic aesthetic while maintaining professional credibility for business users.',
+        'I designed a "one-click" interface that hides enormous AI complexity behind radical simplicity. The design philosophy was to automate everything that can be automated, trend analysis, video generation, CGI integration, audience targeting, while giving users control over brand essentials. The interface reflects TikTok\'s energetic aesthetic while maintaining professional credibility for business users.',
       keyDecisions: [
         {
           title: "Radical Simplicity Interface",
@@ -573,7 +573,7 @@ const caseStudies = {
     solution: {
       title: "The Solution",
       content:
-        "I designed an AI-powered fitness ecosystem that adapts to each user's unique context, continuously learning and adjusting based on performance data, feedback, and changing goals. The interface combines behavioral psychology principles—progress visualization, streak mechanics, social accountability, achievement systems—with sophisticated AI personalization. Every screen reinforces motivation while making complex fitness science accessible through clean, intuitive design.",
+        "I designed an AI-powered fitness ecosystem that adapts to each user's unique context, continuously learning and adjusting based on performance data, feedback, and changing goals. The interface combines behavioral psychology principles, progress visualization, streak mechanics, social accountability, achievement systems, with sophisticated AI personalization. Every screen reinforces motivation while making complex fitness science accessible through clean, intuitive design.",
       keyDecisions: [
         {
           title: "Adaptive Onboarding Journey",
@@ -588,7 +588,7 @@ const caseStudies = {
         {
           title: "Progress Visualization System",
           description:
-            "Designed comprehensive progress dashboards showing multiple metrics—weight, body measurements, strength gains, workout consistency, personal records, and photo comparisons. Used charts, graphs, timelines, and visual comparisons that make progress tangible and motivating. Integrated celebration moments for milestones and achievements to maintain motivation during plateaus.",
+            "Designed comprehensive progress dashboards showing multiple metrics, weight, body measurements, strength gains, workout consistency, personal records, and photo comparisons. Used charts, graphs, timelines, and visual comparisons that make progress tangible and motivating. Integrated celebration moments for milestones and achievements to maintain motivation during plateaus.",
         },
         {
           title: "Community & Accountability",
@@ -685,7 +685,7 @@ const caseStudies = {
     color: "#10B981",
 
     intro:
-      "As the sole designer on this concept project, I designed AXIOM—a forward-thinking architecture firm website that prioritizes climate-responsive design and sustainability. This 1-day design sprint showcases my ability to rapidly conceptualize sophisticated digital experiences that communicate complex architectural philosophies through intuitive, modern interfaces. The project demonstrates strategic thinking around content hierarchy, immersive storytelling, and sustainable design principles.",
+      "As the sole designer on this concept project, I designed AXIOM, a forward-thinking architecture firm website that prioritizes climate-responsive design and sustainability. This 1-day design sprint showcases my ability to rapidly conceptualize sophisticated digital experiences that communicate complex architectural philosophies through intuitive, modern interfaces. The project demonstrates strategic thinking around content hierarchy, immersive storytelling, and sustainable design principles.",
 
     challenge: {
       title: "The Challenge",
@@ -703,7 +703,7 @@ const caseStudies = {
     solution: {
       title: "The Solution",
       content:
-        "I designed a research-driven website architecture that positions climate-responsive design as the core narrative thread. The interface uses layered storytelling—combining immersive visuals, data visualization, case studies, and educational content to demonstrate both the firm's design philosophy and measurable environmental impact. Every page reinforces the climate-first approach while maintaining visual sophistication that appeals to high-end clients seeking sustainable architecture solutions.",
+        "I designed a research-driven website architecture that positions climate-responsive design as the core narrative thread. The interface uses layered storytelling, combining immersive visuals, data visualization, case studies, and educational content to demonstrate both the firm's design philosophy and measurable environmental impact. Every page reinforces the climate-first approach while maintaining visual sophistication that appeals to high-end clients seeking sustainable architecture solutions.",
       keyDecisions: [
         {
           title: "Climate-First Information Architecture",
@@ -718,7 +718,7 @@ const caseStudies = {
         {
           title: "Immersive Storytelling System",
           description:
-            "Created a layered content experience combining hero imagery, scrolling animations, progressive disclosure, and contextual information. Projects are presented as narratives—showing design evolution, climate considerations, material choices, and long-term environmental impact. This approach educates while engaging, turning portfolio browsing into an educational journey.",
+            "Created a layered content experience combining hero imagery, scrolling animations, progressive disclosure, and contextual information. Projects are presented as narratives, showing design evolution, climate considerations, material choices, and long-term environmental impact. This approach educates while engaging, turning portfolio browsing into an educational journey.",
         },
         {
           title: "Modern Minimalist Aesthetic",
@@ -739,7 +739,7 @@ const caseStudies = {
         icon: Target,
         title: "Content Strategy",
         description:
-          "Mapped comprehensive content architecture prioritizing climate methodology, project narratives, impact data, and thought leadership. Created hierarchical information structure supporting both quick browsing and deep exploration. Designed content types for different audience segments—from prospective clients to architecture students.",
+          "Mapped comprehensive content architecture prioritizing climate methodology, project narratives, impact data, and thought leadership. Created hierarchical information structure supporting both quick browsing and deep exploration. Designed content types for different audience segments, from prospective clients to architecture students.",
       },
       {
         icon: Lightbulb,
@@ -795,7 +795,7 @@ const caseStudies = {
       "Time constraints drive focused decision-making. The 1-day sprint forced prioritization of high-impact design decisions, demonstrating efficiency without compromising quality.",
       "Sustainability is a competitive differentiator. Positioning climate-responsive design as the core narrative creates clear differentiation in the architecture market.",
       "Education builds trust. Complex industries like architecture benefit from content-rich experiences that educate prospects while showcasing expertise.",
-      "Concept work demonstrates strategic thinking. Portfolio projects reveal how designers approach problems, prioritize features, and execute vision—critical indicators of senior-level capability.",
+      "Concept work demonstrates strategic thinking. Portfolio projects reveal how designers approach problems, prioritize features, and execute vision, critical indicators of senior-level capability.",
     ],
   },
 
@@ -1045,340 +1045,71 @@ const caseStudies = {
 };
 
 export function CaseStudy({ projectId }: CaseStudyProps) {
-  const study =
-    caseStudies[projectId as keyof typeof caseStudies];
-
+  const study = caseStudies[projectId as keyof typeof caseStudies];
   if (!study) return null;
-
+  const accent = study.color;
   return (
-    <div className="min-h-screen bg-[#0a0a0a] pt-32 pb-20">
-      <article className="max-w-[1000px] mx-auto px-8">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <div className="inline-block px-4 py-2 bg-white/10 rounded-full text-white/70 text-sm tracking-wide mb-6">
-            Case Study
-          </div>
-
-          <h1 className="text-5xl md:text-6xl lg:text-7xl text-white tracking-tight mb-4">
-            {study.title}
-          </h1>
-          <p className="text-2xl text-white/60 tracking-tight mb-12">
-            {study.subtitle}
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 mb-8 border-y border-white/10">
-            <div>
-              <p className="text-xs text-white/30 mb-2 tracking-widest uppercase">
-                Role
-              </p>
-              <p className="text-white/80">{study.role}</p>
-            </div>
-            <div>
-              <p className="text-xs text-white/30 mb-2 tracking-widest uppercase">
-                Year
-              </p>
-              <p className="text-white/80">{study.year}</p>
-            </div>
-            <div>
-              <p className="text-xs text-white/30 mb-2 tracking-widest uppercase">
-                Duration
-              </p>
-              <p className="text-white/80">{study.duration}</p>
-            </div>
-            <div>
-              <p className="text-xs text-white/30 mb-2 tracking-widest uppercase">
-                Client
-              </p>
-              <p className="text-white/80">{study.client}</p>
-            </div>
-          </div>
-
-          <p className="text-lg text-white/70 leading-relaxed">
-            {study.intro}
-          </p>
-        </motion.div>
-
-        {/* Hero Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-24 rounded-2xl overflow-hidden"
-        >
-          <ImageWithFallback
-            src={study.image}
-            alt={study.title}
-            className="w-full h-auto"
-          />
-        </motion.div>
-
-        {/* Challenge */}
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="mb-24"
-        >
-          <h2 className="text-3xl md:text-4xl text-white tracking-tight mb-8">
-            {study.challenge.title}
-          </h2>
-          <p className="text-lg text-white/70 leading-relaxed mb-10">
-            {study.challenge.content}
-          </p>
-
-          <div className="mb-10">
-            <h3 className="text-xl text-white/80 mb-6">
-              Key Pain Points
-            </h3>
-            <div className="space-y-3">
-              {study.challenge.pain_points.map(
-                (point, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start gap-3"
-                  >
-                    <div className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2.5 flex-shrink-0" />
-                    <p className="text-white/60">{point}</p>
-                  </div>
-                ),
-              )}
-            </div>
-          </div>
-        </motion.section>
-
-        {/* Solution */}
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="mb-24"
-        >
-          <h2 className="text-3xl md:text-4xl text-white tracking-tight mb-8">
-            {study.solution.title}
-          </h2>
-          <p className="text-lg text-white/70 leading-relaxed mb-10">
-            {study.solution.content}
-          </p>
-
-          <div className="space-y-6">
-            <h3 className="text-xl text-white/80 mb-6">
-              Key Design Decisions
-            </h3>
-            {study.solution.keyDecisions.map(
-              (decision, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                  }}
-                  className="p-6 bg-white/5 border-l-4 rounded-lg relative"
-                  style={{ borderColor: study.color }}
-                >
-                  <div className="flex items-start gap-4">
-                    <CheckCircle2
-                      className="w-6 h-6 flex-shrink-0 mt-1"
-                      style={{ color: study.color }}
-                    />
-                    <div>
-                      <h4 className="text-xl text-white mb-3">
-                        {decision.title}
-                      </h4>
-                      <p className="text-white/60 leading-relaxed">
-                        {decision.description}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              ),
-            )}
-          </div>
-        </motion.section>
-
-        {/* Process */}
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="mb-24"
-        >
-          <h2 className="text-3xl md:text-4xl text-white tracking-tight mb-12">
-            Design Process
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {study.process.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.1,
-                }}
-                className="p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all group"
-              >
-                <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <step.icon className="w-6 h-6 text-white/80" />
-                </div>
-                <h3 className="text-xl text-white mb-3 tracking-tight">
-                  {step.title}
-                </h3>
-                <p className="text-white/60 leading-relaxed">
-                  {step.description}
-                </p>
-              </motion.div>
+    <div className="min-h-screen pt-32 pb-20">
+      <header className="relative overflow-hidden px-8 mb-20">
+        <div className="brand-glow w-[55vw] h-[55vw] -top-[18vw] -right-[10vw]" style={{ background: `radial-gradient(circle at center, ${accent}, transparent 70%)`, opacity: 0.18 }} />
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="relative max-w-[1100px] mx-auto">
+          <div className="eyebrow mono-label mb-8" style={{ color: accent }}>Case Study \u00b7 {study.year}</div>
+          <h1 className="text-6xl md:text-7xl lg:text-8xl text-white tracking-tighter leading-[0.95] mb-6">{study.title}</h1>
+          <p className="text-2xl md:text-3xl text-white/55 tracking-tight max-w-3xl">{study.subtitle}</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[var(--hairline)] rounded-2xl overflow-hidden mt-14">
+            {[{ k: 'Role', v: study.role }, { k: 'Year', v: study.year }, { k: 'Duration', v: study.duration }, { k: 'Client', v: study.client }].map((m) => (
+              <div key={m.k} className="bg-[#0a0a0f] p-6"><p className="mono-label text-white/35 mb-2">{m.k}</p><p className="text-white/85">{m.v}</p></div>
             ))}
           </div>
-        </motion.section>
-
-        {/* Impact */}
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="mb-24"
-        >
-          <h2 className="text-3xl md:text-4xl text-white tracking-tight mb-8">
-            {study.impact.title}
-          </h2>
-          <p className="text-lg text-white/70 leading-relaxed mb-10">
-            {study.impact.description}
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {study.impact.metrics.map((metric, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.1,
-                }}
-                className="p-8 bg-white/5 border border-white/10 rounded-2xl hover:border-white/20 transition-all group"
-              >
-                <div className="text-4xl md:text-5xl text-white mb-3 tracking-tight group-hover:scale-105 transition-transform">
-                  {metric.value}
-                </div>
-                <div className="text-sm text-white/60 mb-2">
-                  {metric.label}
-                </div>
-                <div className="text-xs text-white/40 mb-3">
-                  {metric.subtitle}
-                </div>
-                <div
-                  className="pt-3 border-t border-white/10 text-sm"
-                  style={{ color: study.color }}
-                >
-                  {metric.trend}
-                </div>
-              </motion.div>
-            ))}
+        </motion.div>
+      </header>
+      <article className="max-w-[1100px] mx-auto px-8">
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.15 }} className="mb-24 rounded-2xl overflow-hidden border border-[var(--hairline)]">
+          <ImageWithFallback src={study.image} alt={study.title} className="w-full h-auto" />
+        </motion.div>
+        <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.8 }} className="text-2xl md:text-3xl text-white/80 leading-snug tracking-tight mb-28 max-w-4xl">{study.intro}</motion.p>
+        <Section index="01" label="The problem" title={study.challenge.title} accent={accent}>
+          <p className="text-lg text-white/65 leading-relaxed mb-10">{study.challenge.content}</p>
+          <div className="space-y-px bg-[var(--hairline)] rounded-xl overflow-hidden">
+            {study.challenge.pain_points.map((point, i) => (<div key={i} className="flex items-start gap-4 bg-[#0a0a0f] p-5"><span className="mono-label" style={{ color: accent }}>{String(i + 1).padStart(2, '0')}</span><p className="text-white/65">{point}</p></div>))}
           </div>
-
-{study.impact.testimonial && (
-            <div
-              className="p-8 bg-white/5 border-l-4 rounded-2xl"
-              style={{ borderColor: study.color }}
-            >
-              <p className="text-xl text-white/70 italic leading-relaxed mb-6">
-                "{study.impact.testimonial.quote}"
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                  <span className="text-white text-sm">
-                    {study.impact.testimonial.author.charAt(0)}
-                  </span>
-                </div>
-                <div>
-                  <div className="text-white">
-                    {study.impact.testimonial.author}
-                  </div>
-                  <div className="text-sm text-white/50">
-                    {study.impact.testimonial.role}
-                  </div>
-                  <div className="text-sm text-white/40">
-                    {study.impact.testimonial.company}
-                  </div>
-                </div>
-              </div>
-            </div>
+        </Section>
+        <Section index="02" label="The approach" title={study.solution.title} accent={accent}>
+          <p className="text-lg text-white/65 leading-relaxed mb-12">{study.solution.content}</p>
+          <div className="grid md:grid-cols-2 gap-px bg-[var(--hairline)] rounded-2xl overflow-hidden">
+            {study.solution.keyDecisions.map((decision, i) => (<motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }} className="group relative bg-[#0a0a0f] p-8 hover:bg-[var(--surface-1)] transition-colors"><CheckCircle2 className="w-6 h-6 mb-5" style={{ color: accent }} /><h4 className="text-xl text-white mb-3 tracking-tight">{decision.title}</h4><p className="text-white/55 leading-relaxed">{decision.description}</p></motion.div>))}
+          </div>
+        </Section>
+        <Section index="03" label="How it was made" title="Design Process" accent={accent}>
+          <div className="grid md:grid-cols-2 gap-6">
+            {study.process.map((step, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.5, delay: i * 0.08 }} className="group p-8 rounded-2xl border border-[var(--hairline)] hover:border-white/20 transition-colors"><div className="flex items-center justify-between mb-6"><div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: `${accent}1a` }}><step.icon className="w-6 h-6" style={{ color: accent }} /></div><span className="mono-label text-white/25">{String(i + 1).padStart(2, '0')}</span></div><h3 className="text-xl text-white mb-3 tracking-tight">{step.title}</h3><p className="text-white/55 leading-relaxed">{step.description}</p></motion.div>))}
+          </div>
+        </Section>
+        <Section index="04" label="The outcome" title={study.impact.title} accent={accent}>
+          <p className="text-lg text-white/65 leading-relaxed mb-12 max-w-4xl">{study.impact.description}</p>
+          {study.impact.testimonial && (
+            <div className="relative p-10 rounded-2xl border border-[var(--hairline)]"><div className="absolute left-0 top-8 bottom-8 w-1 rounded-full" style={{ backgroundColor: accent }} /><p className="text-2xl text-white/85 leading-snug tracking-tight mb-8">&ldquo;{study.impact.testimonial.quote}&rdquo;</p><div className="flex items-center gap-4"><div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: `${accent}26`, color: accent }}><span className="text-sm">{study.impact.testimonial.author.charAt(0)}</span></div><div><div className="text-white">{study.impact.testimonial.author}</div>{study.impact.testimonial.role && <div className="text-sm text-white/50">{study.impact.testimonial.role}</div>}{study.impact.testimonial.company && <div className="mono-label mt-1" style={{ color: accent }}>{study.impact.testimonial.company}</div>}</div></div></div>
           )}
-        </motion.section>
-
-        {/* Key Learnings */}
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="mb-24"
-        >
-          <h2 className="text-3xl md:text-4xl text-white tracking-tight mb-8">
-            Key Learnings
-          </h2>
-          <div className="space-y-6">
-            {study.learnings.map((learning, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.1,
-                }}
-                className="flex gap-4 p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all"
-              >
-                <span
-                  className="text-2xl"
-                  style={{ color: study.color }}
-                >
-                  {index + 1}
-                </span>
-                <p className="text-lg text-white/70 leading-relaxed flex-1">
-                  {learning}
-                </p>
-              </motion.div>
-            ))}
+        </Section>
+        <Section index="05" label="Takeaways" title="Key Learnings" accent={accent}>
+          <div className="space-y-px bg-[var(--hairline)] rounded-2xl overflow-hidden">
+            {study.learnings.map((learning, i) => (<motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.06 }} className="flex gap-6 bg-[#0a0a0f] p-8"><span className="text-3xl tracking-tighter" style={{ color: accent }}>{String(i + 1).padStart(2, '0')}</span><p className="text-lg text-white/70 leading-relaxed flex-1">{learning}</p></motion.div>))}
           </div>
-        </motion.section>
-
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center py-12 border-t border-white/10"
-        >
-          <a
-            href={study.behanceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black hover:bg-white/90 transition-all rounded-full group"
-          >
-            <span className="tracking-wide">
-              View Full Project on Behance
-            </span>
-            <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </a>
-        </motion.div>
+        </Section>
+        {study.behanceUrl && (
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center py-12 border-t border-[var(--hairline)]"><a href={study.behanceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 rounded-full transition-transform hover:scale-[1.03]" style={{ backgroundColor: accent, color: 'var(--accent-ink)' }}><span className="tracking-wide">View Full Project on Behance</span><ArrowUpRight className="w-5 h-5" /></a></motion.div>
+        )}
       </article>
     </div>
+  );
+}
+
+interface SectionProps { index: string; label: string; title: string; accent: string; children: React.ReactNode; }
+function Section({ index, label, title, accent, children }: SectionProps) {
+  return (
+    <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.7 }} className="mb-28">
+      <div className="flex items-baseline gap-6 mb-10 pb-6 border-b border-[var(--hairline)]"><span className="mono-label" style={{ color: accent }}>{index}</span><div><p className="mono-label text-white/35 mb-2">{label}</p><h2 className="text-3xl md:text-5xl text-white tracking-tight">{title}</h2></div></div>
+      {children}
+    </motion.section>
   );
 }

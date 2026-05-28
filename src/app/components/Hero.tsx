@@ -13,7 +13,7 @@ Product Designer with 5+ years of experience across SaaS, fintech, banking, and 
 
 EXPERIENCE
 
-Product Designer — Persoluxe (SaaS Product)
+Product Designer, Persoluxe (SaaS Product)
 Sep 2025 – Mar 2026
 • Designed and shipped features for a SaaS platform with 5,000+ active users
 • Owned end-to-end UX delivery across core product flows from discovery to developer handoff
@@ -21,7 +21,7 @@ Sep 2025 – Mar 2026
 • Improved onboarding flow and task completion through iterative UX improvements
 • Worked in Agile sprints with product managers and engineers
 
-Founder / Product Designer — Seyru Studio (Design Consultancy)
+Founder / Product Designer, Seyru Studio (Design Consultancy)
 Jun 2024 – Sep 2025
 • Led end-to-end product design for SaaS and fintech clients
 • Built scalable design systems and reusable UI architecture across projects
@@ -29,7 +29,7 @@ Jun 2024 – Sep 2025
 • Delivered production-ready designs reducing development ambiguity and rework
 • Worked with international and GCC-based clients across multiple engagements
 
-UI/UX Designer — Freelance / Contract (Fintech, Banking, Government)
+UI/UX Designer, Freelance / Contract (Fintech, Banking, Government)
 Jan 2021 – Present
 • Designed digital banking and internal systems for large financial institutions (NDA)
 • Worked on onboarding, account management, and compliance dashboard systems
@@ -40,8 +40,8 @@ Jan 2021 – Present
 
 EDUCATION
 
-M.Sc. Automation & Systems Engineering — Badji Mokhtar University (2023–2025)
-B.Sc. Automation Engineering — Badji Mokhtar University (2019–2023)
+M.Sc. Automation & Systems Engineering, Badji Mokhtar University (2023–2025)
+B.Sc. Automation Engineering, Badji Mokhtar University (2019–2023)
 
 SKILLS
 
@@ -69,8 +69,10 @@ Arabic (Native) · French (Fluent) · English (Professional)
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-8">
-      <div className="max-w-[1400px] w-full">
+    <section className="relative min-h-screen flex items-center justify-center px-8 overflow-hidden">
+      <div className="brand-glow w-[60vw] h-[60vw] -top-[12vw] -left-[6vw]" />
+      <div className="brand-glow alt w-[36vw] h-[36vw] bottom-[-8vw] right-[-6vw]" />
+      <div className="relative max-w-[1400px] w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -105,28 +107,27 @@ Arabic (Native) · French (Fluent) · English (Professional)
           >
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 md:gap-0">
               <div className="space-y-2">
-                <p className="text-2xl md:text-3xl text-white/80 tracking-tight">
-                  Product Designer
-                </p>
-                <p className="text-lg text-white/40 tracking-wide">
-                  5 years of experience
-                </p>
+                <p className="text-2xl md:text-3xl text-white/90 tracking-tight">Product Designer</p>
+                <p className="text-lg text-white/55 tracking-wide">5 years of experience</p>
               </div>
               
-              <div className="flex gap-8 text-white/40 tracking-wide">
+              <div className="flex gap-10 text-white/70 tracking-wide">
                 <div>
-                  <p className="text-sm text-white/30 mb-1">Based in</p>
+                  <p className="mono-label text-white/40 mb-2">Based in</p>
                   <p>Algeria</p>
                 </div>
                 <div>
-                  <p className="text-sm text-white/30 mb-1">Status</p>
-                  <p className="text-white/60">Available</p>
+                  <p className="mono-label text-white/40 mb-2">Status</p>
+                  <p className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: 'var(--accent-brand)' }} />
+                    Available
+                  </p>
                 </div>
               </div>
             </div>
             
             <div className="max-w-3xl">
-              <p className="text-xl text-white/60 leading-relaxed mb-8">
+              <p className="text-xl text-white/65 leading-relaxed mb-8">
                 Specialized in crafting intuitive digital experiences for SaaS, FinTech, and AI-powered platforms. 
                 I transform complex systems into simple, user-centered designs that drive engagement and business growth. 
                 Passionate about creating accessible interfaces that solve real problems.
@@ -134,7 +135,7 @@ Arabic (Native) · French (Fluent) · English (Professional)
               
               <button
                 onClick={handleDownloadResume}
-                className="inline-flex items-center gap-3 px-6 py-4 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 text-white rounded-full transition-all group"
+                className="inline-flex items-center gap-3 px-6 py-4 bg-white/5 hover:bg-white/10 border border-white/15 hover:border-[var(--accent-brand)] text-white rounded-full transition-all group"
               >
                 <Download className="w-5 h-5 transition-transform group-hover:translate-y-1" />
                 <span className="tracking-wide">Download Resume</span>

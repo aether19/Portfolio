@@ -36,10 +36,8 @@ export function Testimonials() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-white tracking-tight mb-4">
-            Client Testimonials
-          </h2>
-          <p className="text-xl text-white/50">What people say about working with me</p>
+          <p className="eyebrow mono-label text-white/50 mb-6">Testimonials</p>
+          <h2 className="text-5xl md:text-7xl text-white tracking-tight">What people say</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -50,22 +48,22 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all group"
+              className="p-8 bg-[var(--surface-1)] border border-[var(--hairline)] rounded-2xl hover:border-[var(--accent-brand)] transition-all group"
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-white text-white" />
+                  <Star key={i} className="w-4 h-4" style={{ fill: 'var(--accent-brand)', color: 'var(--accent-brand)' }} />
                 ))}
               </div>
               
-              <blockquote className="text-lg text-white/70 leading-relaxed mb-6 italic">
+              <blockquote className="text-lg text-white/75 leading-relaxed mb-6">
                 "{testimonial.quote}"
               </blockquote>
               
               <div className="pt-6 border-t border-white/10">
                 <div className="text-white mb-1">{testimonial.author}</div>
                 <div className="text-sm text-white/50">{testimonial.role}</div>
-                <div className="text-sm text-white/40">{testimonial.company}</div>
+                <div className="mono-label text-accent mt-1">{testimonial.company}</div>
               </div>
             </motion.div>
           ))}
