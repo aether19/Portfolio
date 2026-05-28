@@ -1,27 +1,23 @@
 import { motion } from 'motion/react';
-import { Star } from 'lucide-react';
 
 const testimonials = [
   {
     quote: "Ayoub's design work transformed our platform completely. His attention to detail and user-centric approach resulted in a 94% satisfaction rate from our users. He's a true design leader.",
     author: 'Sarah C.',
     role: 'Product Manager',
-    company: 'OPALO Technologies',
-    rating: 5,
+    company: "OPALO'Labs",
   },
   {
     quote: "Working with Ayoub was exceptional. He not only delivered beautiful designs but also deeply understood our business goals. The NordWave platform exceeded all our expectations.",
     author: 'Moatez O.',
     role: 'Solo entrepreneur',
     company: 'NordWave Financial',
-    rating: 5,
   },
   {
     quote: "Ayoub has an incredible ability to simplify complex problems. His work on AD Forge helped us reduce campaign creation time by 18 hours while improving engagement rates significantly.",
     author: 'Yacine L.',
     role: 'Marketing Director',
     company: 'AD Forge Inc',
-    rating: 5,
   },
 ];
 
@@ -50,11 +46,6 @@ export function Testimonials() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="p-8 bg-[var(--surface-1)] border border-[var(--hairline)] rounded-2xl hover:border-[var(--accent-brand)] transition-all group"
             >
-              <div className="flex gap-1 mb-6">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4" style={{ fill: 'var(--accent-brand)', color: 'var(--accent-brand)' }} />
-                ))}
-              </div>
               
               <blockquote className="text-lg text-white/75 leading-relaxed mb-6">
                 "{testimonial.quote}"
