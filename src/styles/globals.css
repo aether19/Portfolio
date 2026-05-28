@@ -199,3 +199,23 @@ body::after { content: ""; position: fixed; inset: 0; z-index: 2; pointer-events
 .text-accent { color: var(--accent-brand); }
 .eyebrow { display: inline-flex; align-items: center; gap: 0.6rem; }
 .eyebrow::before { content: ""; width: 1.75rem; height: 1px; background: var(--accent-brand); }
+
+/* ---- awwwards layer ---- */
+::selection { background: var(--accent-brand); color: var(--accent-ink); }
+body::before { content: ""; position: fixed; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124,107,255,0.10), transparent 60%); }
+
+.line-mask { display: block; overflow: hidden; padding-bottom: 0.08em; }
+
+.link-underline { position: relative; display: inline-block; }
+.link-underline::after { content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 100%; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); }
+.link-underline:hover::after { transform: scaleX(1); transform-origin: left; }
+
+.display { letter-spacing: -0.03em; line-height: 0.9; }
+.hover-preview { position: fixed; top: 0; left: 0; width: 320px; height: 220px; border-radius: 14px; overflow: hidden; pointer-events: none; z-index: 60; box-shadow: 0 30px 80px -20px rgba(0,0,0,0.6); }
+.hover-preview img { width: 100%; height: 100%; object-fit: cover; }
+
+@keyframes scrollcue { 0% { transform: translateY(0); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(10px); opacity: 0; } }
+.scroll-cue span { display: block; width: 1px; height: 36px; background: linear-gradient(var(--accent-brand), transparent); }
+
+.chip { border: 1px solid var(--hairline); border-radius: 9999px; transition: border-color 0.3s, color 0.3s, background 0.3s; }
+.chip:hover { border-color: var(--accent-brand); }

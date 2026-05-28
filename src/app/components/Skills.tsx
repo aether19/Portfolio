@@ -40,7 +40,7 @@ export function Skills() {
       <div className="max-w-[1400px] mx-auto px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.8 }} className="mb-16">
           <p className="eyebrow mono-label text-white/50 mb-6">What I do</p>
-          <h2 className="text-5xl md:text-7xl text-white tracking-tight">Areas of Expertise</h2>
+          <h2 className="display text-5xl md:text-7xl text-white">Areas of Expertise</h2>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--hairline)] rounded-2xl overflow-hidden">
           {expertise.map((area, index) => (

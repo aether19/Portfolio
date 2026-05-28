@@ -37,7 +37,7 @@ export function Testimonials() {
           className="mb-16"
         >
           <p className="eyebrow mono-label text-white/50 mb-6">Testimonials</p>
-          <h2 className="text-5xl md:text-7xl text-white tracking-tight">What people say</h2>
+          <h2 className="display text-5xl md:text-7xl text-white">What people say</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -1,4 +1,5 @@
-import { motion } from 'motion/react';
+import { useState } from 'react';
+import { motion, AnimatePresence, useMotionValue, useSpring } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
 import adForgeImg from '../../imports/Mockup_18.png';
 import nordwaveImg from '../../imports/Mockup_21.png';
@@ -8,7 +9,6 @@ import shreddyImg from '../../imports/Rustic_Flat_Lay_iPhone_15_Pro_Mockup___Gre
 import wondercatImg from '../../imports/Laptop_and_Phone_Desk_Mockup.png';
 import seaGamesImg from 'figma:asset/d87944b23f362f0a69082de28adf4e5354ce308b.png';
 import neosysImg from '../../imports/Mockup_26-1.png';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface ProjectsProps {
   onSelectProject: (projectId: string) => void;
@@ -106,29 +106,47 @@ const projects = [
 ];
 
 export function Projects({ onSelectProject }: ProjectsProps) {
+  const [hovered, setHovered] = useState<number | null>(null);
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const px = useSpring(mx, { stiffness: 250, damping: 30, mass: 0.5 });
+  const py = useSpring(my, { stiffness: 250, damping: 30, mass: 0.5 });
+
+  const handleMove = (e: React.MouseEvent) => {
+    mx.set(e.clientX - 160);
+    my.set(e.clientY - 110);
+  };
+
   return (
-    <section id="work" className="px-8 py-32">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="work" className="px-6 md:px-12 lg:px-16 py-32" onMouseMove={handleMove}>
+      <div className="max-w-[1500px] mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.8 }} className="mb-16 flex items-end justify-between gap-8">
-          <div><p className="eyebrow mono-label text-white/50 mb-6">Selected work</p><h2 className="text-5xl md:text-7xl lg:text-8xl text-white tracking-tight">Projects</h2></div>
+          <div><p className="eyebrow mono-label text-white/50 mb-6">Selected work</p><h2 className="display text-5xl md:text-7xl lg:text-8xl text-white">Projects</h2></div>
           <span className="mono-label text-white/40 hidden md:block">{String(projects.length).padStart(2, '0')} Case Studies</span>
         </motion.div>
         <div className="border-t border-[var(--hairline)]">
           {projects.map((project, index) => (
-            <motion.article key={project.id} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-80px' }} transition={{ duration: 0.5, delay: (index % 2) * 0.05 }} onClick={() => onSelectProject(project.id)} className="group relative grid grid-cols-12 items-center gap-6 py-8 border-b border-[var(--hairline)] cursor-pointer">
+            <motion.article
+              key={project.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.5, delay: (index % 2) * 0.05 }}
+              onClick={() => onSelectProject(project.id)}
+              onMouseEnter={() => setHovered(index)}
+              onMouseLeave={() => setHovered((h) => (h === index ? null : h))}
+              className="group relative grid grid-cols-12 items-center gap-6 py-7 md:py-8 border-b border-[var(--hairline)] cursor-pointer transition-colors hover:bg-[var(--surface-1)]"
+            >
               <div className="absolute left-0 top-0 bottom-0 w-px scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500" style={{ background: 'var(--accent-brand)' }} />
               <div className="col-span-2 md:col-span-1 pl-4"><span className="mono-label text-white/30 group-hover:text-accent transition-colors">{String(index + 1).padStart(2, '0')}</span></div>
-              <div className="col-span-10 md:col-span-5">
-                <h3 className="text-2xl md:text-4xl text-white tracking-tight group-hover:translate-x-2 transition-transform duration-500">{project.title}</h3>
-                <p className="text-white/45 mt-2 tracking-tight">{project.subtitle}</p>
-                <div className="flex flex-wrap gap-x-5 gap-y-1 mt-4">{project.tags.map((tag) => (<span key={tag} className="mono-label text-white/40">{tag}</span>))}</div>
+              <div className="col-span-8 md:col-span-7">
+                <h3 className="display text-2xl md:text-5xl text-white group-hover:translate-x-3 transition-transform duration-500">{project.title}</h3>
+                <p className="text-white/45 mt-2 tracking-tight group-hover:translate-x-3 transition-transform duration-500 delay-[40ms]">{project.subtitle}</p>
               </div>
-              <div className="hidden md:block col-span-4 overflow-hidden rounded-xl aspect-[16/10]">
-                <motion.img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover opacity-70 group-hover:opacity-100" whileHover={{ scale: 1.05 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} />
-              </div>
-              <div className="col-span-12 md:col-span-2 flex md:justify-end items-center gap-4 pl-4 md:pl-0">
-                <span className="mono-label text-white/40">{project.year}</span>
-                <span className="flex items-center justify-center w-10 h-10 rounded-full border border-[var(--hairline)] text-white transition-colors group-hover:border-transparent group-hover:bg-[var(--accent-brand)] group-hover:text-[var(--accent-ink)]"><ArrowUpRight className="w-5 h-5" /></span>
+              <div className="hidden md:flex col-span-3 flex-wrap gap-x-4 gap-y-1 justify-start">{project.tags.map((tag) => (<span key={tag} className="mono-label text-white/40">{tag}</span>))}</div>
+              <div className="col-span-2 md:col-span-1 flex md:justify-end items-center gap-4">
+                <span className="mono-label text-white/40 hidden lg:inline">{project.year}</span>
+                <span className="flex items-center justify-center w-10 h-10 rounded-full border border-[var(--hairline)] text-white transition-all group-hover:border-transparent group-hover:bg-[var(--accent-brand)] group-hover:text-[var(--accent-ink)] group-hover:rotate-45"><ArrowUpRight className="w-5 h-5" /></span>
               </div>
             </motion.article>
           ))}
@@ -137,6 +155,21 @@ export function Projects({ onSelectProject }: ProjectsProps) {
           <a href="https://www.behance.net/ayoub-benhamouche" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-5 border border-[var(--hairline)] hover:border-[var(--accent-brand)] text-white rounded-full transition-all group"><span className="text-lg tracking-wide">View More Work on Behance</span><ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></a>
         </motion.div>
       </div>
+
+      <AnimatePresence>
+        {hovered !== null && (
+          <motion.div
+            className="hover-preview hidden md:block"
+            style={{ x: px, y: py }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <img src={projects[hovered].image} alt={projects[hovered].title} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
