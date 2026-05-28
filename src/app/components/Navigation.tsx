@@ -11,7 +11,6 @@ export function Navigation({ onBack, showBack, isScrolled }: NavigationProps) {
           <button onClick={onBack} className="flex items-center gap-3 text-white/60 hover:text-white transition-colors group"><ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" /><span className="tracking-wide">Back to index</span></button>
         ) : (
           <a href="#" className="flex items-center gap-3 group">
-            <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: 'var(--accent-brand)' }} />
             <span className="text-white tracking-wide link-underline">Ayoub Benhamouche</span>
           </a>
         )}

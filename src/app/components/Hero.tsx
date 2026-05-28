@@ -77,17 +77,6 @@ Arabic (Native) · French (Fluent) · English (Professional)
       <div className="brand-glow alt w-[36vw] h-[36vw] bottom-[-8vw] right-[-6vw]" />
 
       <div className="relative max-w-[1500px] w-full mx-auto pt-28">
-        <motion.div
-          className="flex items-center gap-4 mb-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1, ease }}
-        >
-          <span className="mono-label text-white/40">Portfolio — 2026</span>
-          <span className="flex-1 h-px bg-[var(--hairline)] max-w-[160px]" />
-          <span className="mono-label text-white/40 hidden sm:inline">Product Designer</span>
-        </motion.div>
-
         <h1 className="display text-[18vw] md:text-[14vw] lg:text-[12.5vw] text-white">
           {lines.map((line, i) => (
             <span key={line} className="line-mask">
@@ -147,10 +136,6 @@ Arabic (Native) · French (Fluent) · English (Professional)
             <p className="mono-label text-white/35 mb-2">Experience</p>
             <p className="text-white/80">5 years</p>
           </div>
-        </div>
-        <div className="scroll-cue hidden md:flex flex-col items-center gap-3">
-          <span style={{ animation: 'scrollcue 1.8s infinite' }} />
-          <span className="mono-label text-white/30">Scroll</span>
         </div>
       </motion.div>
     </section>

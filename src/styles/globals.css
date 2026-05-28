@@ -197,8 +197,7 @@ body::after { content: ""; position: fixed; inset: 0; z-index: 2; pointer-events
 .brand-glow.alt { background: radial-gradient(circle at center, var(--accent-2), transparent 70%); }
 .mono-label { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.72rem; }
 .text-accent { color: var(--accent-brand); }
-.eyebrow { display: inline-flex; align-items: center; gap: 0.6rem; }
-.eyebrow::before { content: ""; width: 1.75rem; height: 1px; background: var(--accent-brand); }
+.eyebrow { display: inline-flex; align-items: center; }
 
 /* ---- awwwards layer ---- */
 ::selection { background: var(--accent-brand); color: var(--accent-ink); }
